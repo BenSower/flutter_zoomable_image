@@ -6,8 +6,12 @@ void main() {
   runApp(
     new MaterialApp(
       home: new Scaffold(
-        body: new ZoomableImage(new AssetImage('images/squirrel.jpg'),
-            scale: 16.0),
+        body: new ZoomableImage(
+            new AssetImage('images/squirrel.jpg'),
+            scale: 16.0, 
+            //the background is Colors.black by default
+            backgroundColor: Colors.black,
+        ),
       ),
     ),
   );
