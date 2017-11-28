@@ -5,7 +5,14 @@ A dart+flutter package for panning and zooming images by touch.
 ## Getting Started
 
 ```
-new ZoomableImage(new AssetImage('images/squirrel.jpg'), scale: 16.0)
+import 'package:zoomable_image/zoomable_image.dart';
+
+new ZoomableImage(
+  new AssetImage('images/squirrel.jpg'), 
+  scale: 16.0,
+  //the default is Colors.black
+  backgroundColor: Colors.white,
+);
 ```
 
 That's all you need. See below and [`example/`](https://github.com/perlatus/flutter_zoomable_image/tree/master/example)
